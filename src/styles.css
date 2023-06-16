@@ -1,0 +1,19 @@
+* {
+  font-family: "Poppins";
+  font-style: "normal";
+}
+input {
+  border-radius: 8px;
+  background: none;
+  border: solid rgba(255, 255, 255, 0.6);
+  color: silver;
+  outline: none;
+}
+textarea {
+  border-radius: 8px;
+  background: none;
+  font-family: "Poppins";
+  border: solid rgba(255, 255, 255, 0.6);
+  color: silver;
+  outline: none;
+}

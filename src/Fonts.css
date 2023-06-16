@@ -1,0 +1,16 @@
+/* @font-face {
+  font-family: HandelGothic;
+  src: url(./fonts/HandelGothic.ttf) format("truetype");
+} */
+@font-face {
+  font-family: GTSuper;
+  src: url(./fonts/GTSuper.otf);
+}
+@font-face {
+  font-family: HandelGothic;
+  src: url(./fonts/OPTIHandelGothic-Light.otf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(./fonts/Poppins-Medium.ttf);
+}
