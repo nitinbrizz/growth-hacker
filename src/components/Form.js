@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../App.css";
 import {
   Box,
@@ -28,10 +28,6 @@ function Form() {
     },
   });
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here
-  };
   const CustomInput = ({ type, placeholder }) => {
     return (
       <input
@@ -48,6 +44,37 @@ function Form() {
         }}
       />
     );
+  };
+
+  const [name, setname] = useState("");
+  const [lname, setlname] = useState("");
+  const [email, setemail] = useState("");
+  const [phone, setphone] = useState("");
+  const [company, setCompany] = useState("");
+  const [location, setlocation] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // setLoading(true);
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbx8Siei3WLDqgtQbh7a41cJ1Jj7yvMH9NJRNGCdJdTEtrPiVNDaycDGSel5PhaAl3IZ/exec",
+      {
+        method: "POST",
+        body: {
+          name,
+          lname,
+          email,
+          phone,
+          location,
+        },
+      }
+    )
+      .then((res) => {
+        console.log("SUCCESSFULLY SUBMITTED");
+        // setLoading(false);
+      })
+      .catch((err) => console.log(err));
   };
   return (
     <Box
@@ -88,6 +115,7 @@ function Form() {
             justifyContent: "center",
             m: "auto",
           }}
+          onSubmit={handleSubmit}
         >
           <div>
             <Box
@@ -101,6 +129,8 @@ function Form() {
               <Box sx={{ width: "48%" }}>
                 <p>First Name</p>
                 <input
+                  onChange={(e) => setname(e.target.value)}
+                  value={name}
                   type="text"
                   placeholder="Enter First Name"
                   required
@@ -110,6 +140,8 @@ function Form() {
               <Box sx={{ width: "48%" }}>
                 <p>Last Name</p>
                 <input
+                  onChange={(e) => setlname(e.target.value)}
+                  value={lname}
                   type="text"
                   placeholder="Enter Last Name"
                   required
@@ -120,6 +152,8 @@ function Form() {
             <Box sx={{ width: "100%" }}>
               <p>Email id</p>
               <input
+                onChange={(e) => setemail(e.target.value)}
+                value={email}
                 type="text"
                 placeholder="Enter Your Email"
                 required
@@ -136,6 +170,8 @@ function Form() {
               <Box sx={{ width: "48%" }}>
                 <p>company Name</p>
                 <input
+                  onChange={(e) => setCompany(e.target.value)}
+                  value={company}
                   type="text"
                   placeholder="Enter company Name"
                   required
@@ -145,6 +181,8 @@ function Form() {
               <Box sx={{ width: "48%" }}>
                 <p>choose</p>
                 <input
+                  onChange={(e) => setlocation(e.target.value)}
+                  value={location}
                   type="text"
                   placeholder="choose"
                   required

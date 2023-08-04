@@ -129,16 +129,17 @@ function About() {
               }}
             >
               <img
-                src={"./images/Ellipse 19.png"}
+                src={"./images/dp1.jpg"}
                 style={{
                   // position: "absolute",
                   // left: "0",
                   width: "3.7rem",
                   height: "3.7rem",
-                  // borderRadius: "50%",
+                  borderRadius: "50%",
                   objectFit: "cover",
                   marginRight: "5px",
                 }}
+                alt=""
               />
               <Box
                 sx={{
@@ -150,15 +151,18 @@ function About() {
                 }}
               >
                 <Typography sx={{ fontSize: { xs: "0.8rem", sm: "1rem" } }}>
-                  Name of Person
+                  Manikanta Yadavalli
                 </Typography>
                 <Typography
                   sx={{
                     fontSize: { xs: "0.5rem", sm: "0.8rem" },
                     color: "rgba(255, 255, 255, 0.6)",
+                    textAlign: { xs: "center", sm: "left" },
+                    // border: 1,
+                    width: "60%",
                   }}
                 >
-                  Designation
+                  CEO
                 </Typography>
               </Box>
             </Box>
@@ -198,67 +202,69 @@ function About() {
                 sm: "auto auto auto auto",
               },
               rowGap: "1rem",
-              justifyContent: "space-between",
+              justifyContent: "center",
               width: { xs: "90%", sm: "80%" },
               m: "auto",
               // border: "solid",
               overflowX: "auto",
             }}
           >
-            <Box>
+            <Box sx={{ mx: 1 }}>
               <Box
                 sx={{
                   width: { xs: "9.8rem", sm: "18.4rem" },
                   height: { xs: "9rem", sm: "18.4rem" },
-                  backgroundColor: "grey",
+                  // backgroundColor: "grey",
                 }}
-              ></Box>
-              <Typography>Name of the Person</Typography>
+              >
+                <img
+                  src={"./images/dp2.jpg"}
+                  style={{
+                    // position: "absolute",
+                    // left: "0",
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: "10px",
+                    objectFit: "cover",
+                    marginRight: "5px",
+                  }}
+                  alt=""
+                />
+              </Box>
+              <Typography>Apsara Suresh</Typography>
               <Typography sx={{ color: "silver", fontSize: "0.8rem" }}>
-                Designation
+                Digital Marketing Manager - Affiliate
               </Typography>
             </Box>
-            <Box>
+            <Box sx={{ mx: 1 }}>
               <Box
                 sx={{
                   width: { xs: "9.8rem", sm: "18.4rem" },
                   height: { xs: "9rem", sm: "18.4rem" },
-                  backgroundColor: "grey",
+                  // backgroundColor: "grey",
                 }}
-              ></Box>
-              <Typography>Name of the Person</Typography>
+              >
+                <img
+                  src={"./images/dp3.jpg"}
+                  style={{
+                    // position: "absolute",
+                    // left: "0",
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: "10px",
+                    objectFit: "cover",
+                    marginRight: "5px",
+                  }}
+                  alt=""
+                />
+              </Box>
+              <Typography>Sachin Ramesh</Typography>
               <Typography sx={{ color: "silver", fontSize: "0.8rem" }}>
-                Designation
-              </Typography>
-            </Box>
-            <Box>
-              <Box
-                sx={{
-                  width: { xs: "9.8rem", sm: "18.4rem" },
-                  height: { xs: "9rem", sm: "18.4rem" },
-                  backgroundColor: "grey",
-                }}
-              ></Box>
-              <Typography>Name of the Person</Typography>
-              <Typography sx={{ color: "silver", fontSize: "0.8rem" }}>
-                Designation
-              </Typography>
-            </Box>
-            <Box>
-              <Box
-                sx={{
-                  width: { xs: "9.8rem", sm: "18.4rem" },
-                  height: { xs: "9rem", sm: "18.4rem" },
-                  backgroundColor: "grey",
-                }}
-              ></Box>
-              <Typography>Name of the Person</Typography>
-              <Typography sx={{ color: "silver", fontSize: "0.8rem" }}>
-                Designation
+                Head - Revenue, Growth and Marketing
               </Typography>
             </Box>
           </Box>
-          <Box
+          {/* <Box
             sx={{
               border: "",
               width: { xs: "21%", sm: "5%" },
@@ -275,6 +281,7 @@ function About() {
                 height: "2rem",
                 objectFit: "contain",
               }}
+              alt=""
             />
             <img
               className="imgButton"
@@ -286,8 +293,9 @@ function About() {
                 objectFit: "contain",
                 marginLeft: "11px",
               }}
+              alt=""
             />
-          </Box>
+          </Box> */}
         </Box>
         {/* join section */}
         <Box

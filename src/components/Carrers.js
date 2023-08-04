@@ -290,28 +290,34 @@ function About() {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
+                mt: 2,
               }}
             >
               <img
-                src={"./images/Ellipse 19.png"}
+                src={"./images/dp1.jpg"}
                 style={{
                   // position: "absolute",
                   // left: "0",
                   width: "3.7rem",
                   height: "3.7rem",
-                  // borderRadius: "50%",
+                  borderRadius: "50%",
                   objectFit: "cover",
                   marginRight: "5px",
                 }}
+                alt=""
               />
               <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <Typography sx={{ fontSize: "1rem" }}>
-                  Name of Person
+                  Manikanta Yadavalli
                 </Typography>
                 <Typography
-                  sx={{ fontSize: "0.8rem", color: "rgba(255, 255, 255, 0.6)" }}
+                  sx={{
+                    fontSize: "0.8rem",
+                    color: "rgba(255, 255, 255, 0.6)",
+                    textAlign: "center",
+                  }}
                 >
-                  Designation
+                  CEO
                 </Typography>
               </Box>
             </Box>
@@ -324,7 +330,7 @@ function About() {
               mt: "0px",
             }}
           >
-            <img
+            {/* <img
               className="imgButton"
               onClick={() => (boxRef3.current.scrollLeft -= 280)}
               src={"./images/Vector(10).png"}
@@ -344,7 +350,7 @@ function About() {
                 objectFit: "contain",
                 marginLeft: "11px",
               }}
-            />
+            /> */}
           </Box>
         </Box>
         {/* team section */}
